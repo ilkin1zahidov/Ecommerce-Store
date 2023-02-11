@@ -1,6 +1,6 @@
 import React from 'react';
-import Input from '../components/input';
-import Main from '../components/main';
+import Input from '../components/input/input';
+import Main from '../components/main/main';
 
 import Card_one from '../assets/img/card-1.svg';
 import Card_two from '../assets/img/card-2.svg';
