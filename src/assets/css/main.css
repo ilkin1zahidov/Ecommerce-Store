@@ -105,13 +105,7 @@ body a {
   border-radius: 22px;
   background-color: #FFFFFF;
   margin-bottom: 10px;
-}
-#main .card--all .card .card_img img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 12px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding: 14px;
 }
 #main .card--all .card .card-body .card_name {
   font-size: 20px;

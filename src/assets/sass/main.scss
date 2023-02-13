@@ -114,12 +114,13 @@ body{
                     border-radius: 22px;
                     background-color: $mainColor;
                     margin-bottom: 10px;
-                    img{
-                        width: 100%;
-                        height: auto;
-                        margin-bottom: 12px;
-                        object-fit: cover;
-                    }
+                    padding: 14px;
+                    // img{
+                    //     width: 100%;
+                    //     height: auto;
+                    //     margin-bottom: 12px;
+                    //     object-fit: cover;
+                    // }
                 }
                 .card-body{
                     .card_name{
