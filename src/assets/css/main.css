@@ -92,20 +92,14 @@ body a {
 #main .card--all {
   display: flex;
   flex-wrap: wrap;
+  gap: 44px;
 }
 #main .card--all .card {
-  width: 232px;
   height: auto;
   margin-bottom: 50px;
 }
-#main .card--all .card .card_img {
-  width: 85%;
-  height: auto;
-  border: 1px solid #FFFFFF;
-  border-radius: 22px;
-  background-color: #FFFFFF;
-  margin-bottom: 10px;
-  padding: 14px;
+#main .card--all .card .card-body {
+  margin-top: 20px;
 }
 #main .card--all .card .card-body .card_name {
   font-size: 20px;
@@ -136,5 +130,4 @@ body a {
   border: 1px solid #1A1F16;
   background-color: #1A1F16;
   border-radius: 9px;
-  margin-right: 50px;
 }/*# sourceMappingURL=main.css.map */
