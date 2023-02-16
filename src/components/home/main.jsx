@@ -17,15 +17,14 @@ const main = () => {
 
                     </div>
                 </div>
-     </section>
-      <section id="main">
+    </section>
+    <section id="main">
         <div className="container">
           <div className="card--all">
             {DataJson.map((data) => {
               return (
-                <div className="card">
-                  <div
-                    key={data.id}
+                <div key ={data.id}className="card">
+                  <div       
                     style={{
                       width: data.size,
                       height: data.sizeHeight,
@@ -35,7 +34,7 @@ const main = () => {
                     }}
                   >
                     <div
-                      key={data.id}
+            
                       style={{
                         backgroundImage: `url(${data.picture})`,
                         height: data.height,
@@ -45,8 +44,8 @@ const main = () => {
                       }}
                     />
                   </div>
-
-                  <div className="card-body">
+                      
+                  <div className="card-body"   >
                     <h1 className="card_name">{data.name}</h1>
                     <p className="card_series">{data.series}</p>
                     <div className="card_money">
@@ -59,11 +58,12 @@ const main = () => {
                     </div>
                   </div>
                 </div>
+              
               );
             })}
           </div>
         </div>
-      </section>
+    </section>
     </main>
 
     </>

@@ -22,7 +22,6 @@ const navbar = ({ image }) => {
                     </div>
                 </section>
             </header>
-      
             </>
     
     )
