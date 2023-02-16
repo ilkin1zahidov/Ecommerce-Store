@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 const navbar = ({ image }) => {
     return (
             <>
+            <header>
             <section id='navbar'>
                     <div className="container">
                         <div className="nav-area">
@@ -20,6 +21,8 @@ const navbar = ({ image }) => {
                         </div>
                     </div>
                 </section>
+            </header>
+      
             </>
     
     )

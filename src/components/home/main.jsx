@@ -3,8 +3,10 @@ import DataJson from "../../data/data";
 
 const main = () => {
   return (
+
     <>
-     <section id='input'>
+    <main>
+    <section id='input'>
                 <div className="container">
                     <div className="input_form">
 
@@ -62,6 +64,8 @@ const main = () => {
           </div>
         </div>
       </section>
+    </main>
+
     </>
   );
 };
