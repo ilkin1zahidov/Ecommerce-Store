@@ -1,9 +1,21 @@
 import React from "react";
 import DataJson from "../../data/data";
 
-const main = ({ image }) => {
+const main = () => {
   return (
     <>
+     <section id='input'>
+                <div className="container">
+                    <div className="input_form">
+
+                        <form  >
+                            <label className='input_name'>Search Item</label>
+                            <input className='search_input' type="text" value='Apple Watch,Search S21,Mackbook Pro, ...' />
+                        </form>
+
+                    </div>
+                </div>
+     </section>
       <section id="main">
         <div className="container">
           <div className="card--all">
@@ -33,10 +45,10 @@ const main = ({ image }) => {
                   </div>
 
                   <div className="card-body">
-                    <h1 className="card_name">Apple Watch</h1>
-                    <p className="card_series">Series 5 SE</p>
+                    <h1 className="card_name">{data.name}</h1>
+                    <p className="card_series">{data.series}</p>
                     <div className="card_money">
-                      <span className="money">$ 529.99</span>
+                      <span className="money">{data.money}</span>
                       <form id="checkout">
                         <button className="card_button">
                           <img src={data.basket} alt="basket" />

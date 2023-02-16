@@ -1,13 +1,11 @@
 import React from 'react';
-import Input from '../components/input/input';
-import Main from '../components/main/main';
+import Main from '../components/home/main';
 
 
 
 const Index = () => {
   return (
-    <>
-        <Input/>
+    <>   
         <Main/>
     </>
   )
