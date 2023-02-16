@@ -1,4 +1,5 @@
-const data = [
+const data = {
+     cardData:[
       {
         id: 1,
         width: '162px',
@@ -12,7 +13,7 @@ const data = [
         padding: '15px',
         name:'Apple Watch',
         series:'Series 5 SE',
-        money:'$ 529.99',
+        money:' 529.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -28,7 +29,7 @@ const data = [
         padding: '15px',
         name:'Sony ZX330BT',
         series:'Light Grey',
-        money:'$ 39.99',
+        money:' 39.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -44,7 +45,7 @@ const data = [
         padding: '15px',
         name:'Iphone 11',
         series:'Serious Black',
-        money:'$ 619.99',
+        money:' 619.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -60,7 +61,7 @@ const data = [
         padding: '15px',
         name:'Iphone 11',
         series:'Subway Blue',
-        money:'$ 619.99',
+        money:' 619.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -75,7 +76,7 @@ const data = [
         borderRadius: '22px',
         name:'Macbook Pro 16”',
         series:'Silver - M1 Pro',
-        money:'$ 3249.99',
+        money:' 3249.99',
         basket: require("../assets/img/basket.svg").default
     
       },
@@ -92,7 +93,7 @@ const data = [
         padding: '15px',
         name:'Iphone 11”',
         series:'Product RED',
-        money:'$ 619.99',
+        money:' 619.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -108,7 +109,7 @@ const data = [
         padding: '15px',
         name:'Iphone 11”',
         series:'Milky White',
-        money:'$ 619.99',
+        money:' 619.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -124,7 +125,7 @@ const data = [
         padding: '15px',
         name:'Iphone 12”',
         series:'Rose Pink',
-        money:'$ 729.99',
+        money:' 729.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -140,7 +141,7 @@ const data = [
         padding: '15px',
         name:'Iphone 12”',
         series:'Navy Blue',
-        money:'$ 729.99',
+        money:' 729.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -155,7 +156,7 @@ const data = [
         borderRadius: '22px',
         name:'Dell XPS 15 2-in-1”',
         series:'Midnight Gray',
-        money:'$ 3199.99',
+        money:' 3199.99',
         basket: require("../assets/img/basket.svg").default
     
       },
@@ -172,7 +173,7 @@ const data = [
         padding: '15px',
         name:'Iphone 13 Pro”',
         series:'Silly Silver',
-        money:'$ 1029.99',
+        money:' 1029.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -188,7 +189,7 @@ const data = [
         padding: '15px',
         name:'Iphone 13 Pro”',
         series:'Grey',
-        money:'$ 1099.99',
+        money:' 1099.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -204,7 +205,7 @@ const data = [
         padding: '15px',
         name:'Samsung Galaxy 21',
         series:'2 - Options',
-        money:'$ 999.99',
+        money:' 999.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -220,7 +221,7 @@ const data = [
         padding: '15px',
         name:'Samsung Galaxy S21+',
         series:'Lilac Purple',
-        money:'$ 849.99',
+        money:' 849.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -235,7 +236,7 @@ const data = [
         borderRadius: '22px',
         name:'Dell XPS 13”',
         series:'White',
-        money:'$ 1799.99',
+        money:' 1799.99',
         basket: require("../assets/img/basket.svg").default
       },
       {
@@ -250,12 +251,13 @@ const data = [
         borderRadius: '22px',
         name:'Dell XPS 15”',
         series:'Light Grey',
-        money:'$ 1899.99',
+        money:' 1899.99',
         basket: require("../assets/img/basket.svg").default
       },
       
+     ] 
      
     
   
-  ];
+    };
   export default data;

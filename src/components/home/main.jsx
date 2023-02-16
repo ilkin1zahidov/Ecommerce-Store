@@ -1,18 +1,33 @@
-import React from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React,{ useState } from "react";
 import DataJson from "../../data/data";
 
 const main = () => {
+  const [filter, setFilter] = useState('');
+  const searchText = (event) => {
+    setFilter(event.target.value);
+  } 
+  let dataSearch = DataJson.cardData.filter(data =>{
+      return Object.keys(data).some(key=>
+        data[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
+      )
+  });
   return (
-
     <>
     <main>
     <section id='input'>
                 <div className="container">
                     <div className="input_form">
-
                         <form  >
                             <label className='input_name'>Search Item</label>
-                            <input className='search_input' type="text" value='Apple Watch,Search S21,Mackbook Pro, ...' />
+                            <input 
+                            className='search_input' 
+                            type="text" 
+                            placeholder="Apple watch, Samsung S21, Macbook Pro, ..."
+                            value={filter}
+                            onChange={searchText.bind(this)}
+                            />
+                          
                         </form>
 
                     </div>
@@ -21,7 +36,7 @@ const main = () => {
     <section id="main">
         <div className="container">
           <div className="card--all">
-            {DataJson.map((data) => {
+            {dataSearch.map((data) => {
               return (
                 <div key ={data.id}className="card">
                   <div       
@@ -34,7 +49,6 @@ const main = () => {
                     }}
                   >
                     <div
-            
                       style={{
                         backgroundImage: `url(${data.picture})`,
                         height: data.height,
@@ -43,13 +57,12 @@ const main = () => {
                         borderRadius: data.borderRadius,
                       }}
                     />
-                  </div>
-                      
-                  <div className="card-body"   >
+                  </div>         
+                  <div className="card-body"  >
                     <h1 className="card_name">{data.name}</h1>
                     <p className="card_series">{data.series}</p>
                     <div className="card_money">
-                      <span className="money">{data.money}</span>
+                      <span className="money">${data.money}</span>
                       <form id="checkout">
                         <button className="card_button">
                           <img src={data.basket} alt="basket" />
@@ -57,8 +70,7 @@ const main = () => {
                       </form>
                     </div>
                   </div>
-                </div>
-              
+                </div>   
               );
             })}
           </div>
