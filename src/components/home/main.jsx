@@ -1,8 +1,8 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+
 import React,{ useState } from "react";
 import DataJson from "../../data/data";
 
-const main = () => {
+function Main() {
   const [filter, setFilter] = useState('');
   const searchText = (event) => {
     setFilter(event.target.value);
@@ -80,6 +80,6 @@ const main = () => {
 
     </>
   );
-};
+}
 
-export default main;
+export default Main;
