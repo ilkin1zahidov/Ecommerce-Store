@@ -11,6 +11,7 @@ import Exit from './assets/img/exit.svg'
 
 //TODO:Pages
 import Index from './pages/Index'
+import CartDetails from "./components/card/CartDetails";
 function App() {
   const navbarIcons = {
     HomePage,
@@ -28,6 +29,7 @@ function App() {
           />
             <Routes>
               <Route path='/' element={<Index/>} />
+              <Route path='/card-details' element={<CartDetails/>} />
             </Routes>
 
         </BrowserRouter>

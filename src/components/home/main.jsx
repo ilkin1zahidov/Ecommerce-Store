@@ -1,6 +1,9 @@
-
-import React,{ useState } from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import DataJson from "../../data/data";
+import { addToCart } from "../../slice/cartSlice";
+import Cart from "../card/card";
+
 
 function Main() {
   const [filter, setFilter] = useState('');
@@ -12,10 +15,18 @@ function Main() {
         data[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
       )
   });
+  const dispatch = useDispatch()
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+  };
   return (
     <>
     <main>
-    <section id='input'>
+    
+    <div className="all">
+      <div className="main-all">
+      <section id='input'>
                 <div className="container">
                     <div className="input_form">
                         <form  >
@@ -64,7 +75,7 @@ function Main() {
                     <div className="card_money">
                       <span className="money">${data.money}</span>
                       <form id="checkout">
-                        <button className="card_button">
+                        <button onClick={()=> handleAddToCart(data) } className="card_button">
                           <img src={data.basket} alt="basket" />
                         </button>
                       </form>
@@ -76,6 +87,11 @@ function Main() {
           </div>
         </div>
     </section>
+      </div>
+  
+    <Cart />
+    </div>
+  
     </main>
 
     </>
