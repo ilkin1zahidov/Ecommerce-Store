@@ -67,6 +67,7 @@ body a {
   display: flex;
   justify-content: center;
   padding: 70px 0px;
+  margin-left: 16px;
 }
 .all .main-all #input .container .input_form form {
   margin-top: -35px;

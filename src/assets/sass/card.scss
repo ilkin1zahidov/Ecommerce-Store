@@ -62,7 +62,7 @@ $background-color_1: #4b70e2;
     button {
       border: none;
       outline: none;
-      margin-top: 0.7rem;
+      margin-top: 1.7rem;
       cursor: pointer;
       background: none;
       color: $color_1;
@@ -177,10 +177,11 @@ $background-color_1: #4b70e2;
   align-items: center;
 }
 .card-bag {
-  width: 20%;
+  width: 25%;
   height: 100vh;
   .container {
     padding: 80px 0px;
+    margin-right: 11px;
     .top {
       text-align: center;
       margin-bottom: 10px;

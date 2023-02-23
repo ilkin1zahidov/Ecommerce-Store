@@ -60,20 +60,21 @@ const Cart_details = () => {
                     </div>
               
                     <div>
-                      <h3>{cartItem.name}</h3>
-                      <p>{cartItem.desc}</p>
-                      <button onClick={() => handleRemoveFromCart(cartItem)}>
+                      <h3 style={{marginBottom:'7px'}}>{cartItem.name}</h3>
+                      <p style={{color:'#BFD1E5',marginBottom:'40px'}}>{cartItem.series}</p>
+                      <button onClick={() =>
+                        handleRemoveFromCart(cartItem)}>
                         Remove
                       </button>
                     </div>
                   </div>
                   <div className="cart-product-price">${cartItem.money}</div>
                   <div className="cart-product-quantity">
-                    <button onClick={() => handleDecreaseCart(cartItem)}>
+                    <button style={{color:'red'}} onClick={() => handleDecreaseCart(cartItem)}>
                       -
                     </button>
                     <div className="count">{cartItem.cartQuantity}</div>
-                    <button onClick={() => handleAddToCart(cartItem)}>+</button>
+                    <button style={{color:'green'}} onClick={() => handleAddToCart(cartItem)}>+</button>
                   </div>
                   <div className="cart-product-total-price">
                     ${cartItem.money * cartItem.cartQuantity}
