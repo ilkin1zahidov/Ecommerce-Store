@@ -75,7 +75,7 @@ function Main() {
                     <div className="card_money">
                       <span className="money">${data.money}</span>
                       <form id="checkout">
-                        <button onClick={()=> handleAddToCart(data) } className="card_button">
+                        <button onClick={()=>  handleAddToCart(data) } className="card_button">
                           <img src={data.basket} alt="basket" />
                         </button>
                       </form>

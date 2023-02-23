@@ -38,7 +38,7 @@ const Cart_details = () => {
           <p>Your cart is currently empty</p>
           <div className="start-shopping">
             <Link to="/">
-              <h1>Empty</h1>
+              <h1 style={{color:'red'}}>Empty</h1>
             </Link>
           </div>
         </div>
@@ -55,7 +55,10 @@ const Cart_details = () => {
               cart.cartItems.map((cartItem) => (
                 <div className="cart-item" key={cartItem.id}>
                   <div className="cart-product">
+                    <div className="card-image">
                     <img src={cartItem.picture} alt={cartItem.name} />
+                    </div>
+              
                     <div>
                       <h3>{cartItem.name}</h3>
                       <p>{cartItem.desc}</p>
@@ -64,7 +67,7 @@ const Cart_details = () => {
                       </button>
                     </div>
                   </div>
-                  <div className="cart-product-price">${cartItem.price}</div>
+                  <div className="cart-product-price">${cartItem.money}</div>
                   <div className="cart-product-quantity">
                     <button onClick={() => handleDecreaseCart(cartItem)}>
                       -

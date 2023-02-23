@@ -145,6 +145,10 @@ body {
                   border: 1px solid $card-color;
                   background-color: $card-color;
                   border-radius: 9px;
+                  &:hover{
+                    cursor: pointer;
+                    transition: 0.7s;
+                  }
                
                 }
               }
@@ -154,4 +158,21 @@ body {
       }
     }
 
+}
+
+
+  .active{
+    position: relative;
+
+                    &::before{
+                        position: absolute;
+                        left: -11px;
+                        top: 10px;
+                        content: "";
+                        width: 5px;
+                        height: 5px;
+                        border: 1px solid red;
+                        background-color: red;
+                        border-radius: 50%;
+                    }
 }

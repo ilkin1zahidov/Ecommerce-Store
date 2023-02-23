@@ -138,4 +138,23 @@ body a {
   border: 1px solid #1A1F16;
   background-color: #1A1F16;
   border-radius: 9px;
+}
+.all .main-all #main .card--all .card .card-body .card_money .card_button:hover {
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.active {
+  position: relative;
+}
+.active::before {
+  position: absolute;
+  left: -11px;
+  top: 10px;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

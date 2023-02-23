@@ -22,18 +22,15 @@ const Cart = () => {
                 <div className="card-all">
                 {cart.map((s) => {
                     return (
-                     
                             <div className='card-img'>
                                 <img src={s.picture} alt="" />
                             </div>
-                 
-
                     )
                 })}
              </div>
                 <Link to="/card-details">
                     <div className="button-bag">
-                    <button  className='view-bag'> <div className="card-context"><img src={CheckBag} alt="" /> <span>View Bag</span></div> </button>
+                    <button className='view-bag'> <div className="card-context"><img src={CheckBag} alt="" /> <span>View Bag</span></div></button>
                     </div>
                   
                 </Link>

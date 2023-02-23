@@ -4,7 +4,7 @@ import {BrowserRouter,Route,Routes} from "react-router-dom";
 //TODO: Icons
 import Logo from './assets/img/logo.svg';
 import SideBar from './assets/img/sideBar.svg';
-import HomePage from './assets/img/homePage.svg';
+import HomePage from './assets/img/HomePage.svg';
 import CheckBag from './assets/img/checkBag.svg';
 import Exit from './assets/img/exit.svg'
 //---------------------------------------------------
